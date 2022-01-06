@@ -17,7 +17,7 @@
         <h2>Fill in the blanks to create wacky stories to share with your family and friends!</h2>
     </header>
     <main class="main_container">
-        <div class="form_container">
+        <div id="formContainer" class="form_container">
             <form id="myForm" class="main-form">
                 <div class="input-box">
                     <label for="adjective1">Adjective</label><br>
@@ -56,6 +56,10 @@
 
                 <button type="button" onclick="myFunction()" class="btn">Generate Mad Lib</button>
             </form>
+        </div>
+        <div id="completedMadlib" class="completed-madlib hide">
+            <p id="madlibTest" class="madlib-test"></p>
+            <button type="button" onclick="refreshPage()" class="btn">Restart</button>
         </div>
     </main>
 </body>
